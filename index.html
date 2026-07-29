@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>משרות Embedded — מעקב יומי</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+<style>
+  :root {
+    --bg: #F7F8F7; --surface: #FFFFFF; --ink: #1E2528; --ink-soft: #5A6A70;
+    --line: #DDE4E3; --accent: #0B6E66; --accent-soft: #E3F0EE;
+    --new: #9A4E00; --new-bg: #FDF0E2; --inactive: #98A5A3;
+    --chip-north: #2E5E8C; --chip-north-bg: #E7EFF7;
+    --chip-center: #6D5590; --chip-center-bg: #EFEAF6;
+    --applied: #2E7D32; --applied-bg: #E5F2E6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151A1C; --surface: #1D2427; --ink: #E4EAE9; --ink-soft: #93A3A8;
+      --line: #2C3639; --accent: #4FB3A9; --accent-soft: #14332F;
+      --new: #EFA35C; --new-bg: #3A2A16; --inactive: #5B6A6E;
+      --chip-north: #86AEDA; --chip-north-bg: #1C2C3C;
+      --chip-center: #B49DDB; --chip-center-bg: #2A2138;
+      --applied: #6FBF73; --applied-bg: #1D3320;
+    }
+  }
+  html { background: var(--bg); }
+  body {
+    direction: rtl;
+    font-family: "Segoe UI", "Arial Hebrew", Arial, sans-serif;
+    color: var(--ink); margin: 0; line-height: 1.55;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 28px 20px 60px; }
+  header.top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 16px; margin-bottom: 6px; }
+  h1 { font-size: 26px; margin: 0; letter-spacing: -0.2px; }
+  h1 .en { color: var(--accent); }
+  .updated { font-size: 13px; color: var(--ink-soft); background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 3px 12px; }
+  .sub { color: var(--ink-soft); font-size: 14px; margin: 2px 0 20px; }
+  .stats { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+  .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 16px; min-width: 96px; }
+  .stat b { display: block; font-size: 22px; font-variant-numeric: tabular-nums; color: var(--accent); }
+  .stat.newstat b { color: var(--new); }
+  .stat span { font-size: 12.5px; color: var(--ink-soft); }
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+  .filters button {
+    font: inherit; font-size: 13.5px; cursor: pointer;
+    background: var(--surface); color: var(--ink);
+    border: 1px solid var(--line); border-radius: 999px; padding: 5px 14px;
+  }
+  .filters button:hover { border-color: var(--accent); }
+  .filters button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .filters button.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+  h2.group {
+    font-size: 15px; text-transform: uppercase; letter-spacing: 0.4px;
+    color: var(--accent); border-bottom: 2px solid var(--accent);
+    padding-bottom: 4px; margin: 26px 0 0;
+  }
+  .job {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+    padding: 12px 16px; margin-top: 10px;
+    display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center;
+  }
+  .job.inactive { opacity: 0.55; }
+  .job.applied { border-color: var(--applied); }
+  .job .main { flex: 1 1 320px; min-width: 0; }
+  .job .title { font-weight: 600; font-size: 15.5px; }
+  .job .title a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--accent); }
+  .job .title a:hover { color: var(--accent); }
+  .job .meta { font-size: 13px; color: var(--ink-soft); margin-top: 2px; }
+  .badges { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .badge { font-size: 12px; border-radius: 999px; padding: 2px 10px; white-space: nowrap; }
+  .b-new { background: var(--new-bg); color: var(--new); font-weight: 700; }
+  .b-north { background: var(--chip-north-bg); color: var(--chip-north); }
+  .b-center { background: var(--chip-center-bg); color: var(--chip-center); }
+  .b-other { background: var(--accent-soft); color: var(--accent); }
+  .b-type { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+  .b-off { background: transparent; border: 1px solid var(--line); color: var(--inactive); }
+  .b-applied { background: var(--applied-bg); color: var(--applied); font-weight: 700; }
+  .seen { font-size: 11.5px; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+  .apply-btn {
+    font: inherit; font-size: 12.5px; cursor: pointer; white-space: nowrap;
+    background: var(--surface); color: var(--ink-soft);
+    border: 1px solid var(--line); border-radius: 999px; padding: 3px 12px;
+  }
+  .apply-btn:hover { border-color: var(--applied); color: var(--applied); }
+  .apply-btn:focus-visible { outline: 2px solid var(--applied); outline-offset: 1px; }
+  .apply-btn[aria-pressed="true"] { background: var(--applied); border-color: var(--applied); color: #fff; }
+  .apply-hint { font-size: 12px; color: var(--ink-soft); margin: 10px 2px 0; }
+  .note-box { margin-top: 30px; background: var(--accent-soft); border-radius: 10px; padding: 12px 16px; font-size: 13.5px; color: var(--ink); }
+  .sources { margin-top: 26px; }
+  .sources h2 { font-size: 15px; color: var(--ink-soft); margin-bottom: 6px; }
+  .sources ul { margin: 0; padding-inline-start: 18px; font-size: 13.5px; columns: 2; column-gap: 30px; }
+  @media (max-width: 640px) { .sources ul { columns: 1; } }
+  .sources a { color: var(--accent); text-decoration: none; }
+  .sources a:hover { text-decoration: underline; }
+  .empty { color: var(--ink-soft); font-size: 14px; padding: 18px 4px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>משרות <span class="en">Embedded</span> — מעקב יומי</h1>
+    <span class="updated">עדכון אחרון: <b id="last-updated">…</b></span>
+  </header>
+  <p class="sub">משרות ג'וניור ומשרות סטודנט בתחום ה-embedded, צפון ומרכז · מתעדכן אוטומטית פעם ביום · שלו תורג'מן</p>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="filters" id="filters" role="toolbar" aria-label="סינון משרות">
+    <button data-f="all" class="on">הכול</button>
+    <button data-f="student">סטודנט</button>
+    <button data-f="junior">ג'וניור</button>
+    <button data-f="north">צפון</button>
+    <button data-f="center">מרכז</button>
+    <button data-f="new">חדשות</button>
+    <button data-f="applied">הגשתי ✓</button>
+  </div>
+
+  <div id="list"><p class="empty">טוען משרות…</p></div>
+  <p class="apply-hint">לחיצה על "הגשתי" מסמנת משרה שכבר הגשת אליה מועמדות — הסימון נשמר בדפדפן הזה וישרוד את העדכונים היומיים. כדי שהסימון יופיע גם במכשירים אחרים, תגיד ל-Claude בצ'אט "הגשתי ל-..." והוא ייצרב לאתר.</p>
+
+  <div class="note-box">
+    💡 <b>שכר לקליברציה:</b> לפי GotFriends, מהנדסי Real-Time/Embedded מתחילים מרוויחים כ-24–28 אלף ₪ בחודש (משרה מלאה, לא סטודנט).
+  </div>
+
+  <div class="sources">
+    <h2>מקורות שהסוכן סורק</h2>
+    <ul>
+      <li><a href="https://il.linkedin.com/jobs/embedded-software-engineer-jobs-haifa">LinkedIn — Embedded בחיפה</a></li>
+      <li><a href="https://www.drushim.co.il/jobs/search/junior%20embedded/">דרושים IL — junior embedded</a></li>
+      <li><a href="https://il.indeed.com/q-embedded-student-%D7%9E%D7%A9%D7%A8%D7%95%D7%AA.html">Indeed — embedded student</a></li>
+      <li><a href="https://www.gotfriends.co.il/jobslobby/software/real-time-engineerembedded-engineer/">GotFriends — Real-Time/Embedded</a></li>
+      <li><a href="https://intel.wd1.myworkdayjobs.com/en-US/External">Intel Careers — פורטל Workday (חיפה/פ"ת)</a></li>
+      <li><a href="https://elbitsystems.com/careers/">Elbit Systems Careers</a></li>
+      <li><a href="https://career.rafael.co.il/">רפאל קריירה</a></li>
+      <li><a href="https://careers.mobileye.com/jobs?type=student">Mobileye — משרות סטודנט</a></li>
+      <li><a href="https://www.marvell.com/company/careers/university-recruiting.html">Marvell — University Recruiting</a></li>
+      <li><a href="https://www.glassdoor.com/Job/israel-embedded-software-engineer-jobs-SRCH_IL.0,6_IN119_KO7,33.htm">Glassdoor — Embedded ישראל</a></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+(async function () {
+  let data;
+  try {
+    const res = await fetch('data.json?t=' + Date.now(), { cache: 'no-store' });
+    data = await res.json();
+  } catch (e) {
+    document.getElementById('list').innerHTML = '<p class="empty">שגיאה בטעינת הנתונים — נסה לרענן.</p>';
+    return;
+  }
+  document.getElementById('last-updated').textContent = data.lastUpdated;
+
+  const REGION = { north: ['צפון', 'b-north'], center: ['מרכז', 'b-center'], other: ['אחר', 'b-other'] };
+  const TYPE = { student: 'סטודנט', junior: "ג'וניור" };
+
+  const LS_KEY = 'embeddedJobsApplied';
+  const jobKey = j => j.company + '||' + j.title;
+  let localApplied;
+  try { localApplied = new Set(JSON.parse(localStorage.getItem(LS_KEY) || '[]')); }
+  catch (e) { localApplied = new Set(); }
+  const isApplied = j => j.applied === true || localApplied.has(jobKey(j));
+  function saveLocal() {
+    try { localStorage.setItem(LS_KEY, JSON.stringify([...localApplied])); } catch (e) {}
+  }
+
+  function renderStats() {
+    const active = data.jobs.filter(j => j.active);
+    const mk = (n, label, cls) => `<div class="stat ${cls || ''}"><b>${n}</b><span>${label}</span></div>`;
+    document.getElementById('stats').innerHTML =
+      mk(active.length, 'משרות פעילות') +
+      mk(active.filter(j => j.isNew && !isApplied(j)).length, 'חדשות', 'newstat') +
+      mk(data.jobs.filter(isApplied).length, 'הגשתי') +
+      mk(active.filter(j => j.type === 'student').length, 'סטודנט') +
+      mk(active.filter(j => j.type === 'junior').length, "ג'וניור");
+  }
+
+  let filter = 'all';
+  function render() {
+    renderStats();
+    const list = document.getElementById('list');
+    const show = data.jobs.filter(j => {
+      if (filter === 'all') return true;
+      if (filter === 'new') return j.isNew && j.active && !isApplied(j);
+      if (filter === 'applied') return isApplied(j);
+      if (filter === 'student' || filter === 'junior') return j.type === filter;
+      return j.region === filter;
+    });
+    const groups = [['student', 'משרות סטודנט'], ['junior', "משרות ג'וניור / Entry-Level"]];
+    let html = '';
+    for (const [t, label] of groups) {
+      const items = show.filter(j => j.type === t);
+      if (!items.length) continue;
+      html += `<h2 class="group">${label}</h2>`;
+      for (const j of items) {
+        const [rLabel, rCls] = REGION[j.region] || REGION.other;
+        const applied = isApplied(j);
+        const idx = data.jobs.indexOf(j);
+        html += `<div class="job${j.active ? '' : ' inactive'}${applied ? ' applied' : ''}">
+          <div class="main">
+            <div class="title"><a href="${j.link}" target="_blank" rel="noopener">${j.company} — ${j.title}</a></div>
+            <div class="meta">${j.location}${j.tags && j.tags.length ? ' · ' + j.tags.join(' · ') : ''}${j.note ? ' · ' + j.note : ''}</div>
+          </div>
+          <div class="badges">
+            ${applied ? '<span class="badge b-applied">✔ הוגש</span>' : ''}
+            ${j.isNew && j.active && !applied ? '<span class="badge b-new">חדש</span>' : ''}
+            ${!j.active ? '<span class="badge b-off">לא פעילה</span>' : ''}
+            <span class="badge ${rCls}">${rLabel}</span>
+            <span class="badge b-type">${TYPE[j.type]}</span>
+            <span class="seen">${j.firstSeen}</span>
+            <button class="apply-btn" data-idx="${idx}" aria-pressed="${applied}"
+              ${j.applied === true ? 'disabled title="נצרב באתר — לביטול תגיד ל-Claude"' : ''}>
+              ${applied ? 'הגשתי ✓' : 'הגשתי?'}
+            </button>
+          </div>
+        </div>`;
+      }
+    }
+    list.innerHTML = html || '<p class="empty">אין משרות שמתאימות לסינון הזה כרגע.</p>';
+  }
+
+  document.getElementById('list').addEventListener('click', e => {
+    const btn = e.target.closest('.apply-btn');
+    if (!btn || btn.disabled) return;
+    const j = data.jobs[Number(btn.dataset.idx)];
+    if (!j) return;
+    const k = jobKey(j);
+    if (localApplied.has(k)) localApplied.delete(k); else localApplied.add(k);
+    saveLocal();
+    render();
+  });
+
+  document.getElementById('filters').addEventListener('click', e => {
+    const btn = e.target.closest('button');
+    if (!btn) return;
+    filter = btn.dataset.f;
+    document.querySelectorAll('#filters button').forEach(b => b.classList.toggle('on', b === btn));
+    render();
+  });
+  render();
+})();
+</script>
+</body>
+</html>
