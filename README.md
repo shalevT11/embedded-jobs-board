@@ -14,7 +14,7 @@
 2. משרה חדשה (אין התאמה לפי company+title): הוסף עם `firstSeen` = היום, `isNew: true`, `active: true` — **רק אחרי שאימתת שהקישור שלה חי** (WebFetch).
 3. משרה קיימת: השאר. אם `firstSeen` ישן מ-3 ימים — `isNew: false`.
 4. בדיקת קישורים: בכל ריצה בדוק את הלינק של כל משרה עם `active: true`. עמוד 404 / ריק / "no longer available" / redirect לשגיאה ⇒ `active: false` + note בעברית "נבדק DD.MM — המשרה כבר לא באוויר". חסימה (403/login) בלבד ⇒ להשאיר פעילה עם הערת אימות ידני.
-5. איכות קישורים: להעדיף דפי קריירה רשמיים של חברות. אגרגטורים (talentify/builtin/bandana/secrethunter) מתיישנים מהר — להימנע כשיש חלופה. הקישורים העמוקים הישנים של jobs.intel.com מתים — להשתמש בפורטל intel.wd1.myworkdayjobs.com.
+5. איכות קישורים: **`link` חייב להצביע על דף המשרה הספציפית — לעולם לא על דף חיפוש או דף קריירה כללי.** בדרושים הפורמט הוא `https://www.drushim.co.il/job/<ID>/<refcode>/` (ה-refcode מופיע ב-href של כרטיס המשרה בדף החיפוש). להעדיף דפי קריירה רשמיים של חברות על פני אגרגטורים (talentify/builtin/bandana/secrethunter — מתיישנים מהר). הקישורים העמוקים הישנים של jobs.intel.com מתים — להשתמש בפורטל intel.wd1.myworkdayjobs.com. אם אין שום קישור ישיר, מותר קישור לדף חיפוש רק עם note שמסביר מה לחפש שם.
 6. **סימוני הגשה — חוק מוחלט:** השדה `applied` שייך לשלו בלבד. אסור לשנות/לאפס/למחוק אותו. משרה עם `applied: true` לעולם לא נמחקת (גם אם נסגרה — רק `active: false`). אסור לשנות `company`/`title` של רשומה קיימת (סימוני localStorage בדפדפן ממופתחים לפי company+title).
 
 שדות: `company`, `title`, `location`, `region` (`north`|`center`|`other`), `type` (`student`|`junior`), `tags[]`, `link`, `firstSeen`, `isNew`, `active`, `note?`, `applied?` (בבעלות שלו).
