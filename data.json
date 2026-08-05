@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2.8.2026",
+  "lastUpdated": "5.8.2026",
   "jobs": [
     { "company": "Intel", "title": "Student — SoC Firmware Solutions Group", "location": "חיפה", "region": "north", "type": "student",
       "tags": ["C/C++", "Firmware", "Power Management"], "link": "https://intel.wd1.myworkdayjobs.com/en-US/External?q=student%20firmware",
@@ -57,7 +57,7 @@
       "firstSeen": "29.7.2026", "isNew": false, "active": false, "note": "נבדק 29.7 — ירדה מדרושים" },
     { "company": "Amazon Web Services (Annapurna Labs)", "title": "Embedded Software Student", "location": "חיפה", "region": "north", "type": "student",
       "tags": ["C", "Embedded", "Silicon/Boards"], "link": "https://il.linkedin.com/jobs/view/embedded-software-student-annapurna-labs-at-amazon-web-services-aws-4446501855",
-      "firstSeen": "1.8.2026", "isNew": true, "active": true,
+      "firstSeen": "1.8.2026", "isNew": false, "active": true,
       "note": "נבדק 1.8 (לינקדאין — WebFetch חסם 403 בכל האתרים כולל LinkedIn/Amazon.jobs/Qualcomm/דרושים היום; אומת דרך תוצאות חיפוש: פורסם לפני כ-4 ימים, כותרת ומיקום תואמים). Annapurna Labs = מחלקת הסיליקון של AWS בחיפה, תפקיד סטודנט embedded עם C — התאמה גבוהה לפרופיל" }
   ]
 }
