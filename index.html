@@ -110,6 +110,7 @@
     <button data-f="all" class="on">הכול</button>
     <button data-f="student">סטודנט</button>
     <button data-f="junior">ג'וניור</button>
+    <button data-f="general">תוכנה כללי</button>
     <button data-f="north">צפון</button>
     <button data-f="center">מרכז</button>
     <button data-f="new">חדשות</button>
@@ -154,7 +155,7 @@
   document.getElementById('last-updated').textContent = data.lastUpdated;
 
   const REGION = { north: ['צפון', 'b-north'], center: ['מרכז', 'b-center'], other: ['אחר', 'b-other'] };
-  const TYPE = { student: 'סטודנט', junior: "ג'וניור" };
+  const TYPE = { student: 'סטודנט', junior: "ג'וניור", general: 'תוכנה כללי' };
 
   const LS_KEY = 'embeddedJobsApplied';
   const jobKey = j => j.company + '||' + j.title;
@@ -174,7 +175,8 @@
       mk(active.filter(j => j.isNew && !isApplied(j)).length, 'חדשות', 'newstat') +
       mk(data.jobs.filter(isApplied).length, 'הגשתי') +
       mk(active.filter(j => j.type === 'student').length, 'סטודנט') +
-      mk(active.filter(j => j.type === 'junior').length, "ג'וניור");
+      mk(active.filter(j => j.type === 'junior').length, "ג'וניור") +
+      mk(active.filter(j => j.type === 'general').length, 'תוכנה כללי');
   }
 
   let filter = 'all';
@@ -185,10 +187,10 @@
       if (filter === 'all') return true;
       if (filter === 'new') return j.isNew && j.active && !isApplied(j);
       if (filter === 'applied') return isApplied(j);
-      if (filter === 'student' || filter === 'junior') return j.type === filter;
+      if (filter === 'student' || filter === 'junior' || filter === 'general') return j.type === filter;
       return j.region === filter;
     });
-    const groups = [['student', 'משרות סטודנט'], ['junior', "משרות ג'וניור / Entry-Level"]];
+    const groups = [['student', 'משרות סטודנט'], ['junior', "משרות ג'וניור / Entry-Level — Embedded"], ['general', 'משרות תוכנה כלליות (לא embedded)']];
     let html = '';
     for (const [t, label] of groups) {
       const items = show.filter(j => j.type === t);

@@ -18,4 +18,6 @@
 5א. **חברות ביטחוניות (אלביט, רפאל, תע"א, אלתא וכו'):** אתרי הקריירה שלהן חוסמים גישה ישירה (WAF / Access denied) — אל תקשר אליהם ואל תנסה לאמת דרכם. את המשרות שלהן מאתרים ומקשרים דרך דפי לינקדאין ציבוריים (il.linkedin.com/jobs/view/...) או דרושים.
 6. **סימוני הגשה — חוק מוחלט:** השדה `applied` שייך לשלו בלבד. אסור לשנות/לאפס/למחוק אותו. משרה עם `applied: true` לעולם לא נמחקת (גם אם נסגרה — רק `active: false`). אסור לשנות `company`/`title` של רשומה קיימת (סימוני localStorage בדפדפן ממופתחים לפי company+title).
 
-שדות: `company`, `title`, `location`, `region` (`north`|`center`|`other`), `type` (`student`|`junior`), `tags[]`, `link`, `firstSeen`, `isNew`, `active`, `note?`, `applied?` (בבעלות שלו).
+שדות: `company`, `title`, `location`, `region` (`north`|`center`|`other`), `type` (`student`|`junior`|`general`), `tags[]`, `link`, `firstSeen`, `isNew`, `active`, `note?`, `applied?` (בבעלות שלו).
+
+סוגי משרות: `junior` = ‏embedded ג'וניור (העדיפות הראשונה). `student` = משרות סטודנט embedded. `general` = **משרות תוכנה כלליות לג'וניורים/בוגרים ללא ניסיון** (backend / fullstack / Java / Python / QA automation / Android) — לא embedded; קיימות כי שלו צריך רגל בדלת של התעשייה. אותם כללי אימות חלים (קישור עמוק חי + דרישת ניסיון 0–2 שנים או "ללא ניסיון").
