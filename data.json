@@ -1,99 +1,522 @@
 {
-  "lastUpdated": "7.8.2026",
+  "lastUpdated": "16.9.2026",
   "jobs": [
-    { "company": "Intel", "title": "Student — SoC Firmware Solutions Group", "location": "חיפה", "region": "north", "type": "student",
-      "tags": ["C/C++", "Firmware", "Power Management"], "link": "https://intel.wd1.myworkdayjobs.com/en-US/External?q=student%20firmware",
-      "firstSeen": "29.7.2026", "isNew": false, "active": true,
-      "note": "לא אומת ישירות (מקור JR0251265) — לחפש 'Student SoC Firmware' בפורטל אינטל. דרישות: לפחות 4 סמסטרים עד סיום, 2.5 ימי עבודה" },
-    { "company": "Intel", "title": "Real-Time Embedded Firmware V&V — Student", "location": "לא ידוע", "region": "north", "type": "student",
-      "tags": ["Firmware", "Validation", "Real-Time"], "link": "https://bandana.com/jobs/138e9459-736c-427f-9064-34682f24d89a",
-      "firstSeen": "29.7.2026", "isNew": false, "active": false, "note": "נבדק 29.7 — המשרה כבר לא באוויר" },
-    { "company": "Intel", "title": "Wi-Fi Software Developer — Student", "location": "פתח תקווה", "region": "center", "type": "student",
-      "tags": ["Drivers", "FW/OS", "Wi-Fi"], "link": "https://builtin.com/job/wi-fi-software-developer-student/4741991",
-      "firstSeen": "29.7.2026", "isNew": false, "active": false, "note": "נבדק 29.7 — הוסרה מהמקור עוד במאי 2025" },
-    { "company": "Elbit Systems", "title": "Embedded Software Engineer — Student Position", "location": "רמת השרון", "region": "center", "type": "student",
-      "tags": ["Embedded", "ביטחוני"], "link": "https://www.devjobs.co.il/job-details/3787661917",
-      "firstSeen": "29.7.2026", "isNew": false, "active": true,
-      "note": "המודעה המלאה ב-DevJobs (דורש הרשמה חינמית). שים לב: אתר אלביט חוסם כניסה ישירה לדף הקריירה ('Access denied') — אם רוצים להגיש דרכם, להיכנס ל-elbitsystems.com מהעמוד הראשי ולנווט ידנית ל-Careers" },
-    { "company": "רפאל", "title": "סטודנט/ית למדמ\"ח / תוכנה", "location": "צפון", "region": "north", "type": "student",
-      "tags": ["ביטחוני", "תוכנה"], "link": "https://career.rafael.co.il/",
-      "firstSeen": "29.7.2026", "isNew": false, "active": false, "note": "נבדק 29.7 — המשרה הוסרה מאתר רפאל; שווה לעקוב אחרי דף הקריירה" },
-    { "company": "Mobileye", "title": "משרות סטודנט (דף מרוכז)", "location": "ירושלים", "region": "other", "type": "student",
-      "tags": ["Automotive", "ריכוז משרות"], "link": "https://careers.mobileye.com/jobs?type=student",
-      "firstSeen": "29.7.2026", "isNew": false, "active": true,
-      "note": "נבדק 29.7, שוב 1.8 (403 בשתי הפעמים) — יש לאמת ידנית שעדיין קיימות משרות סטודנט" },
-    { "company": "Elbit Systems", "title": "AI & GPGPU Embedded Software Student Engineer", "location": "חיפה", "region": "north", "type": "student",
-      "tags": ["C++", "CUDA", "Linux", "ביטחוני"], "link": "https://il.linkedin.com/jobs/view/ai-gpgpu-embedded-software-student-eng-at-elbit-systems-israel-4398831648",
-      "firstSeen": "29.7.2026", "isNew": false, "active": true,
-      "note": "נבדק 29.7 (לינקדאין) — פורסם לפני 3 ימים. דרישה: שנה ב'/ג' עם לפחות שנה עד סיום התואר — רלוונטי במיוחד אם ממשיכים לתואר שני" },
-    { "company": "Marvell", "title": "Embedded Software Intern", "location": "לא ידוע", "region": "north", "type": "student",
-      "tags": ["Internship", "Embedded"], "link": "https://www.marvell.com/company/careers/university-recruiting.html",
-      "firstSeen": "29.7.2026", "isNew": false, "active": false, "note": "נבדק 29.7 — הוסרה מהמקור בינואר 2026; דף הגיוס האוניברסיטאי של Marvell בקישור" },
-    { "company": "Mobileye", "title": "Junior Software Embedded Engineer", "location": "ירושלים", "region": "other", "type": "junior",
-      "tags": ["C", "Automotive"], "link": "https://careers.mobileye.com/jobs/junior-software-embedded-engineer/b93f4f8f-8bbc-4a63-a2cd-18a5619581cf",
-      "firstSeen": "29.7.2026", "isNew": false, "active": false, "note": "נבדק 29.7 — 'position no longer available'" },
-    { "company": "Everest Technologies", "title": "מפתח/ת Embedded (ג'וניור, 1–2 שנים)", "location": "ראש העין", "region": "center", "type": "junior",
-      "tags": ["Embedded", "STM32", "C/C++", "FPGA"], "link": "https://www.drushim.co.il/job/37732065/824495a4/",
-      "firstSeen": "29.7.2026", "isNew": false, "active": true, "applied": true,
-      "note": "נבדק 29.7 (קישור ישיר) — פיתוח STM32 מפורש בדרישות! התאמה גבוהה לפרופיל שלך" },
-    { "company": "Elbit Systems", "title": "Computer Vision Algorithms Engineer (ג'וניור)", "location": "חיפה", "region": "north", "type": "junior",
-      "tags": ["אלגוריתמיקה", "משיק ל-embedded"], "link": "https://www.drushim.co.il/job/37872019/7e4a0297/",
-      "firstSeen": "29.7.2026", "isNew": false, "active": true, "applied": true,
-      "note": "נבדק 29.7 (קישור ישיר) — פורסם 24.7, דורש 1–2 שנות ניסיון" },
-    { "company": "Experis Academy", "title": "מפתח/ת תוכנה ללא ניסיון — חברה ביטחונית", "location": "תל אביב", "region": "center", "type": "junior",
-      "tags": ["ללא ניסיון", "הכשרה", "Embedded option"], "link": "https://www.drushim.co.il/job/37683691/18649657/",
-      "firstSeen": "29.7.2026", "isNew": false, "active": true, "applied": true,
-      "note": "נבדק 29.7 (קישור ישיר) — בוטקאמפ 6 חודשים Java/C/C++ עם התמחות embedded. דרישות: ממוצע 85+, פסיכומטרי 680+. דדליין הגשה המקורי היה 29.7 — ייתכן שנסגר, לא ניתן היה לאמת ב-1.8 (WebFetch חסום 403), לאמת ידנית" },
-    { "company": "Experis Academy", "title": "Junior Software Developer — אקדמאיים/ות", "location": "תל אביב", "region": "center", "type": "junior",
-      "tags": ["ללא ניסיון", "הכשרה"], "link": "https://www.drushim.co.il/job/37683653/00a03781/",
-      "firstSeen": "29.7.2026", "isNew": false, "active": true, "applied": true,
-      "note": "נבדק 29.7 (קישור ישיר) — בוטקאמפ 6 חודשים והשמה בחברות טכנולוגיה" },
-    { "company": "Commit", "title": "RT Embedded Software Developer", "location": "כרמיאל", "region": "north", "type": "junior",
-      "tags": ["C/C++", "Real-Time", "Linux/VxWorks"], "link": "https://il.linkedin.com/jobs/view/rt-embedded-software-developer-at-commit-4428359381",
-      "firstSeen": "29.7.2026", "isNew": false, "active": true, "applied": true,
-      "note": "נבדק 29.7 (לינקדאין) — דרישה 1–3 שנות ניסיון C/C++, מתאים לג'וניור. 36 מועמדים עד כה" },
-    { "company": "Amazon Web Services (AWS)", "title": "2026 Graduate Software Dev Engineer", "location": "חיפה", "region": "north", "type": "general",
-      "tags": ["Java/Python/C++", "תוכנית בוגרים", "Cloud"], "link": "https://il.linkedin.com/jobs/view/2026-graduate-software-dev-engineer-at-amazon-web-services-aws-4443062166",
-      "firstSeen": "7.8.2026", "isNew": true, "active": true,
-      "note": "נבדק 7.8 (לינקדאין) — תוכנית בוגרים רשמית: מיועדת למי שסיים תואר ב-24 החודשים האחרונים. אתה בדיוק קהל היעד (מחזור 2026), כולל מנטורינג" },
-    { "company": "Harmonic", "title": "Junior SW Development Engineer", "location": "קיסריה", "region": "north", "type": "general",
-      "tags": ["C/C++", "Linux", "Networking"], "link": "https://il.linkedin.com/jobs/view/junior-sw-development-engineer-at-harmonic-4434176305",
-      "firstSeen": "7.8.2026", "isNew": true, "active": true,
-      "note": "נבדק 7.8 (לינקדאין) — ‏1–3 שנות ניסיון C++‎, היברידי (3 ימים במשרד). ‏C/C++ ו-Linux — הכי קרוב ל-embedded בקטגוריה הזו" },
-    { "company": "Infinity Labs R&D", "title": "Junior Software Engineer — Entry Level Career Path", "location": "חיפה", "region": "north", "type": "general",
-      "tags": ["ללא ניסיון", "הכשרה", "ביטחוני"], "link": "https://www.drushim.co.il/job/37878574/3da0ecf4/",
-      "firstSeen": "7.8.2026", "isNew": true, "active": true,
-      "note": "נבדק 7.8 (דרושים) — הכשרה חינמית + השמה בארגונים ביטחוניים, בלי דרישת ניסיון. שים לב: מודל עם מחויבות חוזית להשמה — לקרוא את התנאים לפני חתימה" },
-    { "company": "QualityAI", "title": "Junior V&V Engineer", "location": "נתניה", "region": "center", "type": "general",
-      "tags": ["V&V", "מכשור רפואי", "ללא ניסיון"], "link": "https://www.drushim.co.il/job/37874584/a08996e7/",
-      "firstSeen": "7.8.2026", "isNew": true, "active": true,
-      "note": "נבדק 7.8 (דרושים) — פורסמה היום! ללא ניסיון, תואר הנדסת תוכנה מתאים. בדיקות ולידציה למכשור רפואי — עבודה צמודה לחומרה" },
-    { "company": "ALLSTARSIT", "title": "בודק/ת תוכנה — חברה ביטחונית בצפון (ג'וניור)", "location": "צפון", "region": "north", "type": "junior",
-      "tags": ["QA", "משיק ל-embedded"], "link": "https://www.drushim.co.il/jobs/search/junior%20embedded/",
-      "firstSeen": "29.7.2026", "isNew": false, "active": false, "note": "נבדק 29.7 — ירדה מדרושים" },
-    { "company": "Amazon Web Services (Annapurna Labs)", "title": "Embedded Software Engineer (Junior)", "location": "חיפה", "region": "north", "type": "junior",
-      "tags": ["C", "Linux", "Silicon", "הכשרה מובנית"], "link": "https://il.linkedin.com/jobs/view/embedded-software-engineer-at-amazon-web-services-aws-4443037259",
-      "firstSeen": "7.8.2026", "isNew": true, "active": true,
-      "note": "נבדק 7.8 (לינקדאין) — משרת ג'וניור מוצהרת! דרישות: B.Sc. + ידע ב-C בלבד, כוללת תוכנית onboarding ייעודית (יסודות embedded ורשתות). התאמה מצוינת לפרופיל שלך" },
-    { "company": "Wiliot", "title": "Firmware Engineer", "location": "קיסריה", "region": "north", "type": "junior",
-      "tags": ["C/C++", "IoT", "RF"], "link": "https://il.linkedin.com/jobs/view/firmware-engineer-at-wiliot-4439733204",
-      "firstSeen": "7.8.2026", "isNew": true, "active": true,
-      "note": "נבדק 7.8 (לינקדאין) — בלי דרישת שנות ניסיון, מדגישים יכולת למידה. פורמלית מבקשים B.Sc. הנדסת חשמל — שווה להגיש גם עם הנדסת תוכנה" },
-    { "company": "Elbit Systems", "title": "Embedded Engineer — Low-Level & Drivers", "location": "ראש העין", "region": "center", "type": "junior",
-      "tags": ["C/C++", "Drivers", "RTOS", "ביטחוני"], "link": "https://il.linkedin.com/jobs/view/embedded-engineer-at-elbit-systems-israel-4421912012",
-      "firstSeen": "7.8.2026", "isNew": true, "active": true,
-      "note": "נבדק 7.8 (לינקדאין) — מוגדרת entry-level אבל מבקשת ניסיון מעשי בדרייברים (SPI/I2C/UART). העבודה שלך ב-register-level על STM32 רלוונטית — שווה ניסיון" },
-    { "company": "SolarEdge", "title": "Junior Power Control System Engineer", "location": "הרצליה", "region": "center", "type": "junior",
-      "tags": ["C/C++", "DSP", "Control", "Firmware"], "link": "https://il.linkedin.com/jobs/view/junior-power-control-system-engineer-at-solaredge-technologies-4438264844",
-      "firstSeen": "7.8.2026", "isNew": true, "active": true,
-      "note": "נבדק 7.8 (לינקדאין) — ג'וניור עם דרישת 1–2 שנות ניסיון תעשייתי (MUST), כמו Everest — שווה הגשה בכל זאת" },
-    { "company": "Amazon Web Services (Nitro)", "title": "Embedded Software Student", "location": "חיפה", "region": "north", "type": "student",
-      "tags": ["C", "Firmware", "Cloud"], "link": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8749814",
-      "firstSeen": "7.8.2026", "isNew": true, "active": true,
-      "note": "נבדק 7.8 (AllJobs) — צוות Nitro, פורסם 22.7. דרישה: 2–3 סמסטרים עד סיום — רלוונטי אם מתחילים תואר שני" },
-    { "company": "Amazon Web Services (Annapurna Labs)", "title": "Embedded Software Student", "location": "חיפה", "region": "north", "type": "student",
-      "tags": ["C", "Embedded", "Silicon/Boards"], "link": "https://il.linkedin.com/jobs/view/embedded-software-student-annapurna-labs-at-amazon-web-services-aws-4446501855",
-      "firstSeen": "1.8.2026", "isNew": false, "active": true,
-      "note": "נבדק 1.8 (לינקדאין — WebFetch חסם 403 בכל האתרים כולל LinkedIn/Amazon.jobs/Qualcomm/דרושים היום; אומת דרך תוצאות חיפוש: פורסם לפני כ-4 ימים, כותרת ומיקום תואמים). Annapurna Labs = מחלקת הסיליקון של AWS בחיפה, תפקיד סטודנט embedded עם C — התאמה גבוהה לפרופיל" }
+    {
+      "company": "Intel",
+      "title": "Student — SoC Firmware Solutions Group",
+      "location": "חיפה",
+      "region": "north",
+      "type": "student",
+      "tags": [
+        "C/C++",
+        "Firmware",
+        "Power Management"
+      ],
+      "link": "https://intel.wd1.myworkdayjobs.com/en-US/External?q=student%20firmware",
+      "firstSeen": "29.7.2026",
+      "isNew": false,
+      "active": true,
+      "note": "לא אומת ישירות (מקור JR0251265) — לחפש 'Student SoC Firmware' בפורטל אינטל. דרישות: לפחות 4 סמסטרים עד סיום, 2.5 ימי עבודה"
+    },
+    {
+      "company": "Intel",
+      "title": "Real-Time Embedded Firmware V&V — Student",
+      "location": "לא ידוע",
+      "region": "north",
+      "type": "student",
+      "tags": [
+        "Firmware",
+        "Validation",
+        "Real-Time"
+      ],
+      "link": "https://bandana.com/jobs/138e9459-736c-427f-9064-34682f24d89a",
+      "firstSeen": "29.7.2026",
+      "isNew": false,
+      "active": false,
+      "note": "נבדק 29.7 — המשרה כבר לא באוויר"
+    },
+    {
+      "company": "Intel",
+      "title": "Wi-Fi Software Developer — Student",
+      "location": "פתח תקווה",
+      "region": "center",
+      "type": "student",
+      "tags": [
+        "Drivers",
+        "FW/OS",
+        "Wi-Fi"
+      ],
+      "link": "https://builtin.com/job/wi-fi-software-developer-student/4741991",
+      "firstSeen": "29.7.2026",
+      "isNew": false,
+      "active": false,
+      "note": "נבדק 29.7 — הוסרה מהמקור עוד במאי 2025"
+    },
+    {
+      "company": "Elbit Systems",
+      "title": "Embedded Software Engineer — Student Position",
+      "location": "רמת השרון",
+      "region": "center",
+      "type": "student",
+      "tags": [
+        "Embedded",
+        "ביטחוני"
+      ],
+      "link": "https://www.devjobs.co.il/job-details/3787661917",
+      "firstSeen": "29.7.2026",
+      "isNew": false,
+      "active": false,
+      "note": "נבדק 16.09 — המשרה כבר לא באוויר."
+    },
+    {
+      "company": "רפאל",
+      "title": "סטודנט/ית למדמ\"ח / תוכנה",
+      "location": "צפון",
+      "region": "north",
+      "type": "student",
+      "tags": [
+        "ביטחוני",
+        "תוכנה"
+      ],
+      "link": "https://career.rafael.co.il/",
+      "firstSeen": "29.7.2026",
+      "isNew": false,
+      "active": false,
+      "note": "נבדק 29.7 — המשרה הוסרה מאתר רפאל; שווה לעקוב אחרי דף הקריירה"
+    },
+    {
+      "company": "Mobileye",
+      "title": "משרות סטודנט (דף מרוכז)",
+      "location": "ירושלים",
+      "region": "other",
+      "type": "student",
+      "tags": [
+        "Automotive",
+        "ריכוז משרות"
+      ],
+      "link": "https://careers.mobileye.com/jobs?type=student",
+      "firstSeen": "29.7.2026",
+      "isNew": false,
+      "active": true,
+      "note": "נבדק 29.7, שוב 1.8 (403 בשתי הפעמים) — יש לאמת ידנית שעדיין קיימות משרות סטודנט"
+    },
+    {
+      "company": "Elbit Systems",
+      "title": "AI & GPGPU Embedded Software Student Engineer",
+      "location": "חיפה",
+      "region": "north",
+      "type": "student",
+      "tags": [
+        "C++",
+        "CUDA",
+        "Linux",
+        "ביטחוני"
+      ],
+      "link": "https://il.linkedin.com/jobs/view/ai-gpgpu-embedded-software-student-eng-at-elbit-systems-israel-4398831648",
+      "firstSeen": "29.7.2026",
+      "isNew": false,
+      "active": true,
+      "note": "נבדק 29.7 (לינקדאין) — פורסם לפני 3 ימים. דרישה: שנה ב'/ג' עם לפחות שנה עד סיום התואר — רלוונטי במיוחד אם ממשיכים לתואר שני"
+    },
+    {
+      "company": "Marvell",
+      "title": "Embedded Software Intern",
+      "location": "לא ידוע",
+      "region": "north",
+      "type": "student",
+      "tags": [
+        "Internship",
+        "Embedded"
+      ],
+      "link": "https://www.marvell.com/company/careers/university-recruiting.html",
+      "firstSeen": "29.7.2026",
+      "isNew": false,
+      "active": false,
+      "note": "נבדק 29.7 — הוסרה מהמקור בינואר 2026; דף הגיוס האוניברסיטאי של Marvell בקישור"
+    },
+    {
+      "company": "Mobileye",
+      "title": "Junior Software Embedded Engineer",
+      "location": "ירושלים",
+      "region": "other",
+      "type": "junior",
+      "tags": [
+        "C",
+        "Automotive"
+      ],
+      "link": "https://careers.mobileye.com/jobs/junior-software-embedded-engineer/b93f4f8f-8bbc-4a63-a2cd-18a5619581cf",
+      "firstSeen": "29.7.2026",
+      "isNew": false,
+      "active": false,
+      "note": "נבדק 29.7 — 'position no longer available'"
+    },
+    {
+      "company": "Everest Technologies",
+      "title": "מפתח/ת Embedded (ג'וניור, 1–2 שנים)",
+      "location": "ראש העין",
+      "region": "center",
+      "type": "junior",
+      "tags": [
+        "Embedded",
+        "STM32",
+        "C/C++",
+        "FPGA"
+      ],
+      "link": "https://www.drushim.co.il/job/37732065/824495a4/",
+      "firstSeen": "29.7.2026",
+      "isNew": false,
+      "active": false,
+      "applied": true,
+      "note": "נבדק 16.09 — המשרה כבר לא באוויר."
+    },
+    {
+      "company": "Elbit Systems",
+      "title": "Computer Vision Algorithms Engineer (ג'וניור)",
+      "location": "חיפה",
+      "region": "north",
+      "type": "junior",
+      "tags": [
+        "אלגוריתמיקה",
+        "משיק ל-embedded"
+      ],
+      "link": "https://www.drushim.co.il/job/37872019/7e4a0297/",
+      "firstSeen": "29.7.2026",
+      "isNew": false,
+      "active": false,
+      "applied": true,
+      "note": "נבדק 16.09 — המשרה כבר לא באוויר."
+    },
+    {
+      "company": "Experis Academy",
+      "title": "מפתח/ת תוכנה ללא ניסיון — חברה ביטחונית",
+      "location": "תל אביב",
+      "region": "center",
+      "type": "junior",
+      "tags": [
+        "ללא ניסיון",
+        "הכשרה",
+        "Embedded option"
+      ],
+      "link": "https://www.drushim.co.il/job/37683691/18649657/",
+      "firstSeen": "29.7.2026",
+      "isNew": false,
+      "active": false,
+      "applied": true,
+      "note": "נבדק 16.09 — המשרה כבר לא באוויר."
+    },
+    {
+      "company": "Experis Academy",
+      "title": "Junior Software Developer — אקדמאיים/ות",
+      "location": "תל אביב",
+      "region": "center",
+      "type": "junior",
+      "tags": [
+        "ללא ניסיון",
+        "הכשרה"
+      ],
+      "link": "https://www.drushim.co.il/job/37683653/00a03781/",
+      "firstSeen": "29.7.2026",
+      "isNew": false,
+      "active": false,
+      "applied": true,
+      "note": "נבדק 16.09 — המשרה כבר לא באוויר."
+    },
+    {
+      "company": "Commit",
+      "title": "RT Embedded Software Developer",
+      "location": "כרמיאל",
+      "region": "north",
+      "type": "junior",
+      "tags": [
+        "C/C++",
+        "Real-Time",
+        "Linux/VxWorks"
+      ],
+      "link": "https://il.linkedin.com/jobs/view/rt-embedded-software-developer-at-commit-4428359381",
+      "firstSeen": "29.7.2026",
+      "isNew": false,
+      "active": true,
+      "applied": true,
+      "note": "נבדק 29.7 (לינקדאין) — דרישה 1–3 שנות ניסיון C/C++, מתאים לג'וניור. 36 מועמדים עד כה"
+    },
+    {
+      "company": "Amazon Web Services (AWS)",
+      "title": "2026 Graduate Software Dev Engineer",
+      "location": "חיפה",
+      "region": "north",
+      "type": "general",
+      "tags": [
+        "Java/Python/C++",
+        "תוכנית בוגרים",
+        "Cloud"
+      ],
+      "link": "https://il.linkedin.com/jobs/view/2026-graduate-software-dev-engineer-at-amazon-web-services-aws-4443062166",
+      "firstSeen": "7.8.2026",
+      "isNew": false,
+      "active": true,
+      "note": "נבדק 7.8 (לינקדאין) — תוכנית בוגרים רשמית: מיועדת למי שסיים תואר ב-24 החודשים האחרונים. אתה בדיוק קהל היעד (מחזור 2026), כולל מנטורינג"
+    },
+    {
+      "company": "Harmonic",
+      "title": "Junior SW Development Engineer",
+      "location": "קיסריה",
+      "region": "north",
+      "type": "general",
+      "tags": [
+        "C/C++",
+        "Linux",
+        "Networking"
+      ],
+      "link": "https://il.linkedin.com/jobs/view/junior-sw-development-engineer-at-harmonic-4434176305",
+      "firstSeen": "7.8.2026",
+      "isNew": false,
+      "active": true,
+      "note": "נבדק 7.8 (לינקדאין) — ‏1–3 שנות ניסיון C++‎, היברידי (3 ימים במשרד). ‏C/C++ ו-Linux — הכי קרוב ל-embedded בקטגוריה הזו"
+    },
+    {
+      "company": "Infinity Labs R&D",
+      "title": "Junior Software Engineer — Entry Level Career Path",
+      "location": "חיפה",
+      "region": "north",
+      "type": "general",
+      "tags": [
+        "ללא ניסיון",
+        "הכשרה",
+        "ביטחוני"
+      ],
+      "link": "https://www.drushim.co.il/job/37878574/3da0ecf4/",
+      "firstSeen": "7.8.2026",
+      "isNew": false,
+      "active": false,
+      "note": "נבדק 16.09 — המשרה כבר לא באוויר."
+    },
+    {
+      "company": "QualityAI",
+      "title": "Junior V&V Engineer",
+      "location": "נתניה",
+      "region": "center",
+      "type": "general",
+      "tags": [
+        "V&V",
+        "מכשור רפואי",
+        "ללא ניסיון"
+      ],
+      "link": "https://www.drushim.co.il/job/37874584/a08996e7/",
+      "firstSeen": "7.8.2026",
+      "isNew": false,
+      "active": false,
+      "note": "נבדק 16.09 — המשרה כבר לא באוויר."
+    },
+    {
+      "company": "ALLSTARSIT",
+      "title": "בודק/ת תוכנה — חברה ביטחונית בצפון (ג'וניור)",
+      "location": "צפון",
+      "region": "north",
+      "type": "junior",
+      "tags": [
+        "QA",
+        "משיק ל-embedded"
+      ],
+      "link": "https://www.drushim.co.il/jobs/search/junior%20embedded/",
+      "firstSeen": "29.7.2026",
+      "isNew": false,
+      "active": false,
+      "note": "נבדק 29.7 — ירדה מדרושים"
+    },
+    {
+      "company": "Amazon Web Services (Annapurna Labs)",
+      "title": "Embedded Software Engineer (Junior)",
+      "location": "חיפה",
+      "region": "north",
+      "type": "junior",
+      "tags": [
+        "C",
+        "Linux",
+        "Silicon",
+        "הכשרה מובנית"
+      ],
+      "link": "https://il.linkedin.com/jobs/view/embedded-software-engineer-at-amazon-web-services-aws-4443037259",
+      "firstSeen": "7.8.2026",
+      "isNew": false,
+      "active": true,
+      "note": "נבדק 7.8 (לינקדאין) — משרת ג'וניור מוצהרת! דרישות: B.Sc. + ידע ב-C בלבד, כוללת תוכנית onboarding ייעודית (יסודות embedded ורשתות). התאמה מצוינת לפרופיל שלך"
+    },
+    {
+      "company": "Wiliot",
+      "title": "Firmware Engineer",
+      "location": "קיסריה",
+      "region": "north",
+      "type": "junior",
+      "tags": [
+        "C/C++",
+        "IoT",
+        "RF"
+      ],
+      "link": "https://il.linkedin.com/jobs/view/firmware-engineer-at-wiliot-4439733204",
+      "firstSeen": "7.8.2026",
+      "isNew": false,
+      "active": true,
+      "note": "נבדק 7.8 (לינקדאין) — בלי דרישת שנות ניסיון, מדגישים יכולת למידה. פורמלית מבקשים B.Sc. הנדסת חשמל — שווה להגיש גם עם הנדסת תוכנה"
+    },
+    {
+      "company": "Elbit Systems",
+      "title": "Embedded Engineer — Low-Level & Drivers",
+      "location": "ראש העין",
+      "region": "center",
+      "type": "junior",
+      "tags": [
+        "C/C++",
+        "Drivers",
+        "RTOS",
+        "ביטחוני"
+      ],
+      "link": "https://il.linkedin.com/jobs/view/embedded-engineer-at-elbit-systems-israel-4421912012",
+      "firstSeen": "7.8.2026",
+      "isNew": false,
+      "active": true,
+      "note": "נבדק 7.8 (לינקדאין) — מוגדרת entry-level אבל מבקשת ניסיון מעשי בדרייברים (SPI/I2C/UART). העבודה שלך ב-register-level על STM32 רלוונטית — שווה ניסיון"
+    },
+    {
+      "company": "SolarEdge",
+      "title": "Junior Power Control System Engineer",
+      "location": "הרצליה",
+      "region": "center",
+      "type": "junior",
+      "tags": [
+        "C/C++",
+        "DSP",
+        "Control",
+        "Firmware"
+      ],
+      "link": "https://il.linkedin.com/jobs/view/junior-power-control-system-engineer-at-solaredge-technologies-4438264844",
+      "firstSeen": "7.8.2026",
+      "isNew": false,
+      "active": true,
+      "note": "נבדק 7.8 (לינקדאין) — ג'וניור עם דרישת 1–2 שנות ניסיון תעשייתי (MUST), כמו Everest — שווה הגשה בכל זאת"
+    },
+    {
+      "company": "Amazon Web Services (Nitro)",
+      "title": "Embedded Software Student",
+      "location": "חיפה",
+      "region": "north",
+      "type": "student",
+      "tags": [
+        "C",
+        "Firmware",
+        "Cloud"
+      ],
+      "link": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8749814",
+      "firstSeen": "7.8.2026",
+      "isNew": false,
+      "active": true,
+      "note": "נבדק 7.8 (AllJobs) — צוות Nitro, פורסם 22.7. דרישה: 2–3 סמסטרים עד סיום — רלוונטי אם מתחילים תואר שני"
+    },
+    {
+      "company": "Amazon Web Services (Annapurna Labs)",
+      "title": "Embedded Software Student",
+      "location": "חיפה",
+      "region": "north",
+      "type": "student",
+      "tags": [
+        "C",
+        "Embedded",
+        "Silicon/Boards"
+      ],
+      "link": "https://il.linkedin.com/jobs/view/embedded-software-student-annapurna-labs-at-amazon-web-services-aws-4446501855",
+      "firstSeen": "1.8.2026",
+      "isNew": false,
+      "active": true,
+      "note": "נבדק 1.8 (לינקדאין — WebFetch חסם 403 בכל האתרים כולל LinkedIn/Amazon.jobs/Qualcomm/דרושים היום; אומת דרך תוצאות חיפוש: פורסם לפני כ-4 ימים, כותרת ומיקום תואמים). Annapurna Labs = מחלקת הסיליקון של AWS בחיפה, תפקיד סטודנט embedded עם C — התאמה גבוהה לפרופיל"
+    },
+    {
+      "company": "QPOINT Technologies",
+      "title": "AI Full Stack Developer",
+      "location": "רמת גן",
+      "region": "center",
+      "type": "ai",
+      "tags": [
+        "Claude Code",
+        "Agentic AI",
+        "Java",
+        "Spring Boot",
+        "React"
+      ],
+      "link": "https://www.drushim.co.il/job/38429517/aa9a659f/",
+      "firstSeen": "16.09.2026",
+      "isNew": true,
+      "active": true,
+      "note": "דורש ניסיון מוכח ב-Claude Code ופרויקט GitHub אישי — בדיוק מה שיש לך. מבקש 1–2 שנים Java/Spring."
+    },
+    {
+      "company": "חברה חסויה (DLP Cloud)",
+      "title": "Junior Full Stack Developer — Data Loss Prevention Cloud Service",
+      "location": "תל אביב-יפו",
+      "region": "center",
+      "type": "ai",
+      "tags": [
+        "GenAI",
+        "LLMs",
+        "AI agents",
+        "Full Stack"
+      ],
+      "link": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8786839",
+      "firstSeen": "16.09.2026",
+      "isNew": true,
+      "active": true,
+      "note": "0–2 שנות ניסיון. עוסק בזיהוי איומי GenAI — prompt engineering ו-agentic workflows."
+    },
+    {
+      "company": "SVT Jobs (השמה)",
+      "title": "Junior AI-Native Full Stack Engineer",
+      "location": "תל אביב-יפו",
+      "region": "center",
+      "type": "ai",
+      "tags": [
+        "Full Stack",
+        "AI tooling",
+        "LLM",
+        "ללא ניסיון"
+      ],
+      "link": "https://www.svt.jobs/position/1067611/share/?enc=N2F6MzFOcTFsT3N1bGxSTnZEbk5HeUFEM3NxUDdWUUVtQXZlL0haZjhHQzQzZFFvdmMzSWU5U2d2Z0VNYTdibmErTTdHMi9BNTNpMGpaWGxSN1NvOWc9PQ",
+      "firstSeen": "16.09.2026",
+      "isNew": true,
+      "active": true,
+      "note": "משרה #1067611. לא נדרש ניסיון תעשייתי. קו\"ח תפור ותשובות לטופס מוכנים."
+    },
+    {
+      "company": "חברה חסויה",
+      "title": "Junior Full-Stack Developer (פיתוח מונחה AI)",
+      "location": "ראשון לציון",
+      "region": "center",
+      "type": "ai",
+      "tags": [
+        "C#",
+        "SQL",
+        "JavaScript",
+        "AI tools"
+      ],
+      "link": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8809366",
+      "firstSeen": "16.09.2026",
+      "isNew": true,
+      "active": true,
+      "note": "ללא ניסיון, לבוגרים. אזהרה: 8,000 ₪ אחרי תקופת ניסיון והתחייבות ל-15 חודשים."
+    },
+    {
+      "company": "חברה חסויה",
+      "title": "פיתוח באמצעות AI — משרת סטודנט",
+      "location": "פתח תקווה",
+      "region": "center",
+      "type": "ai",
+      "tags": [
+        "Claude",
+        "סטודנט",
+        "פורטפוליו"
+      ],
+      "link": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8787916",
+      "firstSeen": "16.09.2026",
+      "isNew": true,
+      "active": true,
+      "note": "דורש להציג פרויקטים שנעשו עם Claude בגיוס. משרת סטודנט — רלוונטי רק אם יתחיל תואר שני."
+    }
   ]
 }

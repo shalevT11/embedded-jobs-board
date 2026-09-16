@@ -111,6 +111,7 @@
     <button data-f="student">סטודנט</button>
     <button data-f="junior">ג'וניור</button>
     <button data-f="general">תוכנה כללי</button>
+    <button data-f="ai">פיתוח עם AI</button>
     <button data-f="north">צפון</button>
     <button data-f="center">מרכז</button>
     <button data-f="new">חדשות</button>
@@ -155,7 +156,7 @@
   document.getElementById('last-updated').textContent = data.lastUpdated;
 
   const REGION = { north: ['צפון', 'b-north'], center: ['מרכז', 'b-center'], other: ['אחר', 'b-other'] };
-  const TYPE = { student: 'סטודנט', junior: "ג'וניור", general: 'תוכנה כללי' };
+  const TYPE = { student: 'סטודנט', junior: "ג'וניור", general: 'תוכנה כללי', ai: 'AI-Native' };
 
   const LS_KEY = 'embeddedJobsApplied';
   const jobKey = j => j.company + '||' + j.title;
@@ -176,7 +177,8 @@
       mk(data.jobs.filter(isApplied).length, 'הגשתי') +
       mk(active.filter(j => j.type === 'student').length, 'סטודנט') +
       mk(active.filter(j => j.type === 'junior').length, "ג'וניור") +
-      mk(active.filter(j => j.type === 'general').length, 'תוכנה כללי');
+      mk(active.filter(j => j.type === 'general').length, 'תוכנה כללי') +
+      mk(active.filter(j => j.type === 'ai').length, 'פיתוח עם AI');
   }
 
   let filter = 'all';
@@ -187,10 +189,10 @@
       if (filter === 'all') return true;
       if (filter === 'new') return j.isNew && j.active && !isApplied(j);
       if (filter === 'applied') return isApplied(j);
-      if (filter === 'student' || filter === 'junior' || filter === 'general') return j.type === filter;
+      if (filter === 'student' || filter === 'junior' || filter === 'general' || filter === 'ai') return j.type === filter;
       return j.region === filter;
     });
-    const groups = [['student', 'משרות סטודנט'], ['junior', "משרות ג'וניור / Entry-Level — Embedded"], ['general', 'משרות תוכנה כלליות (לא embedded)']];
+    const groups = [['student', 'משרות סטודנט'], ['junior', "משרות ג'וניור / Entry-Level — Embedded"], ['ai', 'משרות AI-Native — פיתוח בעזרת כלי AI'], ['general', 'משרות תוכנה כלליות (לא embedded)']];
     let html = '';
     for (const [t, label] of groups) {
       const items = show.filter(j => j.type === t);
