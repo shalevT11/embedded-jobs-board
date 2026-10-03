@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "16.9.2026",
+  "lastUpdated": "3.10.2026",
   "jobs": [
     {
       "company": "Intel",
@@ -443,7 +443,7 @@
       ],
       "link": "https://www.drushim.co.il/job/38429517/aa9a659f/",
       "firstSeen": "16.09.2026",
-      "isNew": true,
+      "isNew": false,
       "active": true,
       "note": "דורש ניסיון מוכח ב-Claude Code ופרויקט GitHub אישי — בדיוק מה שיש לך. מבקש 1–2 שנים Java/Spring."
     },
@@ -461,7 +461,7 @@
       ],
       "link": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8786839",
       "firstSeen": "16.09.2026",
-      "isNew": true,
+      "isNew": false,
       "active": true,
       "note": "0–2 שנות ניסיון. עוסק בזיהוי איומי GenAI — prompt engineering ו-agentic workflows."
     },
@@ -479,7 +479,7 @@
       ],
       "link": "https://www.svt.jobs/position/1067611/share/?enc=N2F6MzFOcTFsT3N1bGxSTnZEbk5HeUFEM3NxUDdWUUVtQXZlL0haZjhHQzQzZFFvdmMzSWU5U2d2Z0VNYTdibmErTTdHMi9BNTNpMGpaWGxSN1NvOWc9PQ",
       "firstSeen": "16.09.2026",
-      "isNew": true,
+      "isNew": false,
       "active": true,
       "note": "משרה #1067611. לא נדרש ניסיון תעשייתי. קו\"ח תפור ותשובות לטופס מוכנים."
     },
@@ -497,7 +497,7 @@
       ],
       "link": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8809366",
       "firstSeen": "16.09.2026",
-      "isNew": true,
+      "isNew": false,
       "active": true,
       "note": "ללא ניסיון, לבוגרים. אזהרה: 8,000 ₪ אחרי תקופת ניסיון והתחייבות ל-15 חודשים."
     },
@@ -514,9 +514,81 @@
       ],
       "link": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8787916",
       "firstSeen": "16.09.2026",
-      "isNew": true,
+      "isNew": false,
       "active": true,
       "note": "דורש להציג פרויקטים שנעשו עם Claude בגיוס. משרת סטודנט — רלוונטי רק אם יתחיל תואר שני."
+    },
+    {
+      "company": "חברה חסויה (FinTech SaaS)",
+      "title": "Junior Developer – Issue Resolution",
+      "location": "תל אביב-יפו",
+      "region": "center",
+      "type": "ai",
+      "tags": [
+        "AI coding tools",
+        "Cursor / Claude",
+        "Node.js",
+        "TypeScript",
+        "React"
+      ],
+      "link": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8811621",
+      "firstSeen": "03.10.2026",
+      "isNew": true,
+      "active": true,
+      "note": "דורש שימוש יומיומי בכלי AI (Cursor/Claude/Gemini/Codex) ככלי העבודה המרכזי. שנה ניסיון. בול לפרופיל ה-AI שלך."
+    },
+    {
+      "company": "Maytronics",
+      "title": "Junior Embedded Software Engineer — Robotics (Temporary)",
+      "location": "יקנעם / חיפה / חדרה / ק. אתא",
+      "region": "north",
+      "type": "junior",
+      "tags": [
+        "C/C++",
+        "Embedded",
+        "RTOS",
+        "Git"
+      ],
+      "link": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8810896",
+      "firstSeen": "03.10.2026",
+      "isNew": true,
+      "active": true,
+      "note": "צפון — הכי קרוב אליך. C/C++, 1-2 שנים, RTOS. שים לב: המשרה מוגדרת 'זמנית' (Temporary)."
+    },
+    {
+      "company": "Wobi",
+      "title": "Full Stack Junior — Node.js & React",
+      "location": "ת״א / ר״ג / מרכז",
+      "region": "center",
+      "type": "general",
+      "tags": [
+        "Node.js",
+        "React",
+        "TypeScript",
+        "REST"
+      ],
+      "link": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8753888",
+      "firstSeen": "03.10.2026",
+      "isNew": true,
+      "active": true,
+      "note": "ג'וניור, בלי דרישת שנות ניסיון מפורשת. Node/React/TS."
+    },
+    {
+      "company": "חברה חסויה (Billing)",
+      "title": "Junior Fullstack Developer — Billing & Monetization",
+      "location": "תל אביב-יפו",
+      "region": "center",
+      "type": "general",
+      "tags": [
+        "React",
+        ".NET",
+        "SQL"
+      ],
+      "link": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8825684",
+      "firstSeen": "03.10.2026",
+      "isNew": true,
+      "active": true,
+      "note": "Entry-level — מקבל ניסיון מלימודים/פרויקטים אישיים. React/.NET/SQL."
     }
   ]
 }
