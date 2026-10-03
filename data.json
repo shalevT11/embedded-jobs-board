@@ -589,6 +589,25 @@
       "isNew": true,
       "active": true,
       "note": "Entry-level — מקבל ניסיון מלימודים/פרויקטים אישיים. React/.NET/SQL."
+    },
+    {
+      "company": "NVIDIA (MLIL)",
+      "title": "Software Development Student — Firmware (Machine Learning Israel)",
+      "location": "תל אביב-יפו",
+      "region": "center",
+      "type": "student",
+      "tags": [
+        "C/C++",
+        "Embedded",
+        "Linux",
+        "AI-assisted dev",
+        "LLMs"
+      ],
+      "link": "https://www.alljobs.co.il/Search/UploadSingle.aspx?JobID=8813336",
+      "firstSeen": "03.10.2026",
+      "isNew": true,
+      "active": true,
+      "note": "ה-embedded + AI-native הכי טהור: C/C++ firmware + 'משתמש ב-LLMs וסוכני קוד בשגרת העבודה'. ⬅ אבל משרת סטודנט — דורש 3+ סמסטרים שנותרו. רלוונטי לך רק אם תתחיל תואר שני."
     }
   ]
 }
