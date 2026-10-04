@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "3.10.2026",
+  "lastUpdated": "4.10.2026",
   "jobs": [
     {
       "company": "Intel",
@@ -535,7 +535,8 @@
       "firstSeen": "03.10.2026",
       "isNew": true,
       "active": true,
-      "note": "פינטך ישראלי. דורש כלי AI יומית (Cursor/Claude). ה-AllJobs חסום ב-VIP — להגיש דרך דף הקריירה שלהם (מפנה ל-Comeet, חינם), חפש \"Junior Developer\"."
+      "note": "פינטך ישראלי. דורש כלי AI יומית (Cursor/Claude). ה-AllJobs חסום ב-VIP — להגיש דרך דף הקריירה שלהם (מפנה ל-Comeet, חינם), חפש \"Junior Developer\".",
+      "applied": true
     },
     {
       "company": "Maytronics",
@@ -553,7 +554,8 @@
       "firstSeen": "03.10.2026",
       "isNew": true,
       "active": true,
-      "note": "צפון — הכי קרוב אליך. C/C++, 1-2 שנים, RTOS. שים לב: המשרה מוגדרת 'זמנית' (Temporary)."
+      "note": "צפון — הכי קרוב אליך. C/C++, 1-2 שנים, RTOS. שים לב: המשרה מוגדרת 'זמנית' (Temporary).",
+      "applied": true
     },
     {
       "company": "Wobi",
@@ -608,6 +610,25 @@
       "isNew": true,
       "active": true,
       "note": "ה-embedded + AI-native הכי טהור: C/C++ firmware + 'משתמש ב-LLMs וסוכני קוד בשגרת העבודה'. ⬅ אבל משרת סטודנט — דורש 3+ סמסטרים שנותרו. רלוונטי לך רק אם תתחיל תואר שני."
+    },
+    {
+      "company": "SolarEdge",
+      "title": "Junior Embedded Software Engineer (IoE / Interface)",
+      "location": "הרצליה",
+      "region": "center",
+      "type": "junior",
+      "tags": [
+        "C/C++",
+        "Embedded",
+        "AI tools",
+        "Linux"
+      ],
+      "link": "https://www.comeet.com/jobs/SolarEdge/71.00A/junior-embedded-software-engineer/66.278",
+      "firstSeen": "18.09.2026",
+      "isNew": false,
+      "active": true,
+      "applied": true,
+      "note": "הוגש 18.9.2026. C/C++ + דרישת כלי AI בפיתוח. (לא לבלבל עם Junior Power Control — תפקיד אחר של SolarEdge)."
     }
   ]
 }
