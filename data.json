@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "4.10.2026",
+  "lastUpdated": "5.10.2026",
   "jobs": [
     {
       "company": "Intel",
@@ -629,6 +629,27 @@
       "active": true,
       "applied": true,
       "note": "הוגש 18.9.2026. C/C++ + דרישת כלי AI בפיתוח. (לא לבלבל עם Junior Power Control — תפקיד אחר של SolarEdge)."
+    },
+    {
+      "company": "ERGO NEXT / Next Insurance",
+      "title": "Graduate Full-Stack Engineer — UpNEXT Program",
+      "location": "כפר סבא (היברידי)",
+      "region": "center",
+      "type": "ai",
+      "tags": [
+        "React",
+        "Angular",
+        "Node.js",
+        "TypeScript",
+        "AI frameworks",
+        "LLM"
+      ],
+      "link": "https://job-boards.greenhouse.io/nextinsurance66/jobs/7979090003",
+      "firstSeen": "04.10.2026",
+      "isNew": false,
+      "active": true,
+      "applied": true,
+      "note": "הוגש 5.10.2026. תוכנית הכשרה לבוגרים. GPA 85+ (יש 89.41). צורף גם Cover Letter וגיליון ציונים."
     }
   ]
 }
