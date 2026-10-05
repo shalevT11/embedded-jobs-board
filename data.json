@@ -650,6 +650,26 @@
       "active": true,
       "applied": true,
       "note": "הוגש 5.10.2026. תוכנית הכשרה לבוגרים. GPA 85+ (יש 89.41). צורף גם Cover Letter וגיליון ציונים."
+    },
+    {
+      "company": "Earnix",
+      "title": "Junior Frontend & Automation Developer (זמני 6ח׳)",
+      "location": "רמת גן",
+      "region": "center",
+      "type": "ai",
+      "tags": [
+        "React",
+        "TypeScript",
+        "Test Automation",
+        "AI-first",
+        "LLM tools"
+      ],
+      "link": "https://www.linkedin.com/jobs/view/4475375451/",
+      "firstSeen": "05.10.2026",
+      "isNew": false,
+      "active": true,
+      "applied": true,
+      "note": "הוגש 5.10.2026. החלפת חל\"ד 6 חודשים. React + אוטומציית בדיקות + AI-first."
     }
   ]
 }
