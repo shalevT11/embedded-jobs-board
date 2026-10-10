@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "7.10.2026",
+  "lastUpdated": "10.10.2026",
   "jobs": [
+    {
+      "company": "ARM",
+      "title": "Graduate Security Engineer (GPU System Security)",
+      "location": "רעננה",
+      "region": "center",
+      "type": "junior",
+      "tags": [
+        "Security",
+        "Cryptography",
+        "C/C++",
+        "RTOS",
+        "Embedded"
+      ],
+      "link": "https://careers.arm.com/job/raanana/graduate-security-engineer/33099/101751692768",
+      "firstSeen": "10.10.2026",
+      "isNew": true,
+      "active": true,
+      "applied": true,
+      "note": "הוגש 10.10.2026. GPU System Security — embedded+security+AI. ARM Cortex-M, קריפטו יישומי (ML-KEM), secure-by-design."
+    },
     {
       "company": "Intel",
       "title": "Student — SoC Firmware Solutions Group",
