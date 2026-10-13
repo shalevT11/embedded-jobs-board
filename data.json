@@ -2,6 +2,26 @@
   "lastUpdated": "13.10.2026",
   "jobs": [
     {
+      "company": "abra",
+      "title": "Embedded Software Engineer (C++, Real-Time, Airborne)",
+      "location": "צפון",
+      "region": "north",
+      "type": "junior",
+      "tags": [
+        "C++",
+        "Real-Time",
+        "Embedded",
+        "OOP",
+        "Airborne"
+      ],
+      "link": "https://www.abra.co.il/",
+      "firstSeen": "13.10.2026",
+      "isNew": true,
+      "active": true,
+      "applied": true,
+      "note": "הוגש 13.10.2026. C++ real-time airborne, בית תוכנה, בצפון (אזור מועדף). stretch מתון (2yr C++)."
+    },
+    {
       "company": "Texas Instruments",
       "title": "Junior Design Emulation/Validation Engineer",
       "location": "רעננה",
