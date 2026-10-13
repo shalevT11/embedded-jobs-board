@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "10.10.2026",
+  "lastUpdated": "13.10.2026",
   "jobs": [
+    {
+      "company": "Texas Instruments",
+      "title": "Junior Design Emulation/Validation Engineer",
+      "location": "רעננה",
+      "region": "center",
+      "type": "junior",
+      "tags": [
+        "C",
+        "Validation",
+        "Embedded",
+        "AI Tools",
+        "WiFi MCU"
+      ],
+      "link": "https://careers.ti.com/",
+      "firstSeen": "13.10.2026",
+      "isNew": true,
+      "active": true,
+      "applied": true,
+      "note": "הוגש 13.10.2026. validation של wireless MCU, סביבת AI-driven. דגש C+Claude Code+testing."
+    },
     {
       "company": "ARM",
       "title": "Graduate Security Engineer (GPU System Security)",
