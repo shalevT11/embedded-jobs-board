@@ -1,6 +1,26 @@
 {
-  "lastUpdated": "14.10.2026",
+  "lastUpdated": "15.10.2026",
   "jobs": [
+    {
+      "company": "RAD",
+      "title": "Junior Embedded Software Engineer (#1363)",
+      "location": "תל אביב",
+      "region": "center",
+      "type": "junior",
+      "tags": [
+        "C/C++",
+        "Linux",
+        "RTOS",
+        "Networking",
+        "Embedded"
+      ],
+      "link": "https://www.linkedin.com/jobs/view/4479819284/",
+      "firstSeen": "15.10.2026",
+      "isNew": true,
+      "active": true,
+      "applied": true,
+      "note": "הוגש 15.10.2026. junior אמיתי (0-4שנ' C/C++), networking infra, דגש CCNA. ת\"א היברידי."
+    },
     {
       "company": "Palo Alto Networks",
       "title": "Software Engineer — Graduate Program (Bootcamp)",
