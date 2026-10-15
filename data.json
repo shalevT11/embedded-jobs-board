@@ -2,6 +2,26 @@
   "lastUpdated": "15.10.2026",
   "jobs": [
     {
+      "company": "Bellboy Robotics",
+      "title": "Junior Software Engineer (Full-Stack + Robotics)",
+      "location": "תל אביב",
+      "region": "center",
+      "type": "junior",
+      "tags": [
+        "Full-Stack",
+        "Python",
+        "TypeScript",
+        "Robotics",
+        "Embedded"
+      ],
+      "link": "https://www.linkedin.com/jobs/view/4470441408/",
+      "firstSeen": "15.10.2026",
+      "isNew": true,
+      "active": true,
+      "applied": true,
+      "note": "הוגש 15.10.2026. physical AI/רובוטיקה. device->cloud->UI = הנכס הייחודי. on-site ת\"א."
+    },
+    {
       "company": "Roojoom",
       "title": "Junior Full Stack Engineer (Python/TS, GenAI)",
       "location": "רמת גן",
