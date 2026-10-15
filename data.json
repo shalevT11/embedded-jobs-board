@@ -2,6 +2,26 @@
   "lastUpdated": "15.10.2026",
   "jobs": [
     {
+      "company": "Roojoom",
+      "title": "Junior Full Stack Engineer (Python/TS, GenAI)",
+      "location": "רמת גן",
+      "region": "center",
+      "type": "ai",
+      "tags": [
+        "Full-Stack",
+        "Python",
+        "TypeScript",
+        "LLM",
+        "AI-assisted"
+      ],
+      "link": "https://www.linkedin.com/jobs/view/4477092150/",
+      "firstSeen": "15.10.2026",
+      "isNew": true,
+      "active": true,
+      "applied": true,
+      "note": "הוגש 15.10.2026. learning role, conversational AI/GenAI ל-telco. דגש Claude Code + LLM. מרכז."
+    },
+    {
       "company": "RAD",
       "title": "Junior Embedded Software Engineer (#1363)",
       "location": "תל אביב",
