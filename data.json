@@ -1,6 +1,27 @@
 {
-  "lastUpdated": "13.10.2026",
+  "lastUpdated": "14.10.2026",
   "jobs": [
+    {
+      "company": "Palo Alto Networks",
+      "title": "Software Engineer — Graduate Program (Bootcamp)",
+      "location": "פתח תקווה",
+      "region": "center",
+      "type": "junior",
+      "tags": [
+        "Graduate Program",
+        "C++",
+        "Python",
+        "Cloud",
+        "Cyber",
+        "AI-assisted"
+      ],
+      "link": "https://paloaltonetworks.wd5.myworkdayjobs.com/he-IL/panwexternalcareers/job/office---israel---petach-tikva/software-engineer---graduate-program--bootcamp-_jr-023624",
+      "firstSeen": "14.10.2026",
+      "isNew": true,
+      "active": true,
+      "applied": true,
+      "note": "הוגש 14.10.2026. תוכנית בוגרים (bootcamp 6ש') — junior אמיתי, GPA 85+. מיון 26.10/2.11/4.11."
+    },
     {
       "company": "abra",
       "title": "Embedded Software Engineer (C++, Real-Time, Airborne)",
